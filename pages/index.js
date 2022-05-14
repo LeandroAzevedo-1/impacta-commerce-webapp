@@ -1,21 +1,18 @@
+
+// import styles from '../styles/Home.module.css'
 import React, { useState } from 'react';
 
 export default function Home() {
-  // Declarar uma nova variável de state, na qual chamaremos de "count"
-  const [count, setCount] = useState(0);
+  const [Count, SetCount] = useState(0);
 
-  function increment(){
-    setCount(count + 1)
+  function increment() {
+    SetCount( Count + 1)
   }
 
   return (
     <div>
-      <p>O valor do contador é: {count}</p>
-      <button onClick={increment}>
-        Incrementar
-      </button>
+      <p>O valor do contador é: {Count}</p>
+      <button onClick={increment}>Incrementar</button>
     </div>
-  );
+  )
 }
-
- 
